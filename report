@@ -60,7 +60,7 @@ capture1.pcap is generated after spoofing DNS reply for www.yandex.com using dns
 output of dnsinject:
 --------------------
 
-root@shalakha-Inspiron-3558:/home/shalakha/NetSecAssignments/HW4/refpython/dnsinject-master# python3 dnsinject.py -h hostnames.txt ''
+dnsinject-master# python3 dnsinject.py -h hostnames.txt ''
 WARNING: No route found for IPv6 destination :: (no default route?). This affects only IPv6
 Namespace(filter='', h='hostnames.txt', i=None)
 {'www.yandex.com': '10.6.6.6', 'www.instagram.com': '10.6.6.6'}
@@ -95,7 +95,7 @@ Not spoofing for yandex.com
 
 output of dnsdetect.py:
 -------------------
-root@shalakha-Inspiron-3558:/home/shalakha/NetSecAssignments/HW4/refpython/dnsinject-master# python3 dnsdetect.py -r capture1.pcap ''
+dnsinject-master# python3 dnsdetect.py -r capture1.pcap ''
 WARNING: No route found for IPv6 destination :: (no default route?). This affects only IPv6
 Namespace(filter='', i=None, r='capture1.pcap')
 Reading packets from trace file:  capture1.pcap
